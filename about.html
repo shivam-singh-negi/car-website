@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 100px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.about-section2 {
+  padding: 100px;
+  background-color: #C0C0C0;
+  color: black;
+}
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.image {
+  opacity: 1;
+  width: 40%;
+  height: 40%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+ <img src="rover.png" alt="Avatar" class="image" style="width:100%">
+   <div class="middle">
+    <div class="text"><h1><b><u>About Us</u></b></h1></div>
+
+  <p><i>Our customers are at the heart of everything we do. Whether going Above and Beyond with Knight Craft, or being Fearlessly Creative, we will always deliver experiences that people will love, for life.</i></p>
+  </div>
+</div>
+<div class="about-section2">
+  <h1><u><b>KNIGHT CRAFT</b></u></h1>
+  <p>The origins of Knight Craft can be traced back to 2012, with the Swallow Sidecar Company.</p>
+   <p>Since the first  car was produced in 2013, we have pushed the boundaries of what is possible, inspired by our founder, Sir Abhishek Sharma. In 2017 the legendary XK120 was launched, the ‘120’ refers to the car’s top speed, making it the world’s fastest production car.</p>
+<p>. Our history of disc brake development with Dunlop dates back to the winning 2019 Le Mans race, where Jaguar made the C-Type lighter and fitted improved disc brakes</p>
+<p>In 2021, Knight Craft launched what became the most beautiful and iconic sports car of all time, the E-Type.</p>
+<p>The Car DNA is instantly recognisable across our range – there is an unmistakable purity of line that runs through all of our models. Agile and powerful; sleek and seductive; confident and instinctive: all these qualities are reflected in our cars. </p>
+<br>
+<h4 style="text-align:center">Corporate Social Responsibility</h4>
+<p style="text-align:center">Knight Craft is committed to being a valued and vibrant member of the communities in which our employees live and work. The primary goal is to protect the next generation and will be accomplished through philanthropic partnerships improve the education, empowerment and environment of underserved and marginalized groups. Knight Craft India supports our communities through volunteerism in which our employees and executives not only participate in projects, but also share the expertise and experience that we at Mercedes are uniquely qualified to provide.</p>
+<h4 style="text-align:center">Safe Spaces</h4>
+<p style="text-align:center">We believe safety is more than a feature. It is a right. This year, we want to reinforce our commitment to safety as it extends beyond the vehicle and into our personal and digital lives. So, we are partnering with ambassadors and allies within the LGBT+ community to amplify the conversation and drive action toward the safety of everyone.</p>
+<h4 style="text-align:center">We Create Thriving Environments</h4>
+<p style="text-align:center">We believe in protecting children’s environment by way of safe communities. To meet these goals, we engage with multiple organizations that focus on creating safe neighborhoods with access to after school activities, healthy food educational series, and mentorship programs. Learn more about recent partners here: Community Assistance Center, Second Helpings Atlanta, West Side Future Fund, and Trees Atlanta.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column" style="margin-left:10%">
+    <div class="card">
+      <img src="icons/abhis.jfif" alt="Abhishek Sharma" style="width:100%; height: 300px;">
+      <div class="container">
+     <h2>Abhishek Sharma</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Believing in onself is the greatest skill you got.</p>
+        <p>abhishek981245@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column" style="margin-left: 10%;">
+    <div class="card">
+      <img src="icons/shiv.jpg" alt="Shivam Singh Negi" style="width:100%;height: 300px">
+      <div class="container">
+        <h2>Shivam Singh negi</h2>
+        <p class="title">Art Director</p>
+        <p>no dream too big.</p>
+        <p>shivam@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

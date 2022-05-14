@@ -1,0 +1,23 @@
+
+
+.notice{
+  position: relative;
+  
+    font-size: 20px;
+  padding-bottom: 3%;
+background-color: rgba(7, 10, 80, 0.1);
+  color: white;
+}
+
+
+.notice:hover{  
+  background-color: rgba(100, 20, 30,0.29);
+}
+a{
+  transition: transform .2s
+  color: floralwhite;
+}
+a: hover{
+  transform: scale(1.2);
+  background-color: rgba(100, 20, 30,0.29);
+}
